@@ -3,35 +3,39 @@
 ### Link a la app
 https://serverarep.herokuapp.com/
 
-# Introduction to Complex Systems, Java, mvn and git
+# Taller de de modularización con virtualización e Introducción a Docker y a AWS
 ## Profesor 
 ### Ing Luis Daniel Benavides Navarro
 ## Presentado por 
 ### Andrés Felipe Quintero Duque
 
-## Insatalacion y compilacion
-Debe clonar o descargar como zip el proyecto, una vez tenga los ficheros en su computador debe abrir el IDE de su preferencia y ejecutarlo desde alli
+## Arquitectura de trabajo
+Por medio de contenedores de docker se crearon las imagenes en las cuales almacena la aplicación y una base de datos no relacional mongodb, como se muestra en la imágen:
 
-Para la compilacion, dentro del directorio del proyecto desde la cmd ejecutar el comando mvn package.
+![arquitectura](https://user-images.githubusercontent.com/48091585/93956933-d868a300-fd18-11ea-8469-cfcb22943a78.png)
 
 ### Requisitos
 Debe tener instalado:
-* JDK 
-* Maven 
+* JDK 8
+* Maven
+* Docker
 ## Uso 
-![img1](https://user-images.githubusercontent.com/48091585/92194536-8ecf1b80-ee30-11ea-969d-cf21984480dd.png)
+* En la página principal encontrará un servicio web que le permite escribir un nuevo mensaje y adicionalmente le muestra los ultimos 10 mensajes más recientes
+ 
+![img1](https://user-images.githubusercontent.com/48091585/93956919-cf77d180-fd18-11ea-8519-56b8b400058a.png)
 
-![img2](https://user-images.githubusercontent.com/48091585/92194544-9262a280-ee30-11ea-8b92-b0d6e05f885b.png)
+* Para añadir un nuevo mensaje debe escribir lo que desee en el campo de texto y dar click en el botón "Enviar mensaje"
 
-![img3](https://user-images.githubusercontent.com/48091585/92194551-94c4fc80-ee30-11ea-8078-96e9117dc830.png)
+![img2](https://user-images.githubusercontent.com/48091585/93956923-d272c200-fd18-11ea-9022-54accfb71bf9.png)
 
-![img4](https://user-images.githubusercontent.com/48091585/92205400-39ecce80-ee4b-11ea-8cae-72c15c2bd203.png)
+* Una vez le de en "Enviar mensaje", la lista de mensajes se actualizara le mostrará el mensaje más reciente
 
-![img5](https://user-images.githubusercontent.com/48091585/92205406-3ce7bf00-ee4b-11ea-8444-781606f8793f.png)
+![img3](https://user-images.githubusercontent.com/48091585/93956930-d56db280-fd18-11ea-9645-a5b7534aa3d6.png)
 
-![img6](https://user-images.githubusercontent.com/48091585/92205410-3f4a1900-ee4b-11ea-9109-6a945012e85e.png)
+* Se puede comprobar que los mensajes han sido almacenados en la base de datos
 
-![img7](https://user-images.githubusercontent.com/48091585/92205416-42450980-ee4b-11ea-94cc-707efee2f009.png)
+![img4](https://user-images.githubusercontent.com/48091585/93956932-d7377600-fd18-11ea-84cf-70a2826a2a3b.png)
 
-![img8](https://user-images.githubusercontent.com/48091585/92205420-44a76380-ee4b-11ea-83db-f58eae0a9e72.png)
+
+
 

@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+    web:
+        build:
+            context: ../sparkDockerWebLive
+            dockerfile: Dockerfile
+        
+        container_name: web_appdo
+        ports:
+            - "35001:6000"
+       
+    db:
+        image: mongo:latest
+        container_name: db-mongo-arep
+        environment:
+            MONGO_INITDB_DATABASE: DataBaseArep
+            MONGO_INITDB_ROOT_USERNAME: andrew
+            MONGO_INITDB_ROOT_PASSWORD: arep2020
+        volumes:
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+            - mongodb:/data/db 
+            - mongodb_config:/data/configdb
+        ports:
+            - 27017:27017
+        command: mongod
+volumes:
+    mongodb:
+    mongodb_config:
